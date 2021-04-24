@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 0aa1406613c4b0c48b187487c2f4190b
+guid: a232b4d217708d040992782fb62ff989
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5649470061204452833
-    second: Pot_0
+      213: -7737670442233715790
+    second: StoneTrap1_Rock_0
   - first:
-      213: 4013556964861115096
-    second: Pot_1
+      213: 7176163896650401885
+    second: StoneTrap1_Rock_1
   - first:
-      213: -5615931719996329462
-    second: Pot_2
+      213: -5681644196933602818
+    second: StoneTrap1_Rock_2
   - first:
-      213: -4048233291021119101
-    second: Pot_3
+      213: 185093473308677644
+    second: StoneTrap1_Rock_3
   - first:
-      213: 3647366859496802646
-    second: Pot_4
+      213: -7025001452675893486
+    second: StoneTrap1_Rock_4
+  - first:
+      213: 3478151802054203461
+    second: StoneTrap1_Rock_5
+  - first:
+      213: -9203074458524200430
+    second: StoneTrap1_Rock_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,106 +120,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pot_0
+      name: StoneTrap1_Rock_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1a44b859ec0991b0800000000000000
-      internalID: -5649470061204452833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pot_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8da77587bc403b730800000000000000
-      internalID: 4013556964861115096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pot_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0235caead33012b0800000000000000
-      internalID: -5615931719996329462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pot_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38196c03549c1d7c0800000000000000
-      internalID: -4048233291021119101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pot_4
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 256
         y: 0
         width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659c6d985dc0e9230800000000000000
-      internalID: 3647366859496802646
+      spriteID: 2b3ae9d8ab54e9490800000000000000
+      internalID: -7737670442233715790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5884d50b0bd69360800000000000000
+      internalID: 7176163896650401885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1fc9d94beb621b0800000000000000
+      internalID: -5681644196933602818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c069ec68885919200800000000000000
+      internalID: 185093473308677644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21776aa166e228e90800000000000000
+      internalID: -7025001452675893486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548535cc2a0e44030800000000000000
+      internalID: 3478151802054203461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneTrap1_Rock_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212d13a3a8c184080800000000000000
+      internalID: -9203074458524200430
       vertices: []
       indices: 
       edges: []
