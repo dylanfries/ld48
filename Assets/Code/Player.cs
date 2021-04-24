@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     public float xForce = 1f;
     public float yForce = 1f;
+    public bool isJumping = false;
     public float jumpForce = 1f;
 
     [Header("Movement Settings")]
@@ -43,8 +44,8 @@ public class Player : MonoBehaviour
 
         joyInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         rigid.AddForce(new Vector2(joyInput.x * xForce, joyInput.y * yForce * verticalMoveRatio ));
-
-        if( Input.GetButtonDown("Jump")){
+        isJumping = Input.GetButtonDown("Jump");
+        if (isJumping ) {
             Vector2 normalizedInput = joyInput.normalized;
 
             Vector2 baseVector = new Vector2(normalizedInput.x * xForce, normalizedInput.y * yForce * verticalMoveRatio);
@@ -57,13 +58,17 @@ public class Player : MonoBehaviour
         if (isKnockedDown)
             return;
 
+        isKnockedDown = true;
         knockedDownEvent.Invoke();
-        StartCoroutine("GetUp");
+        StartCoroutine(GetUp());
+        Debug.Log("call get up");
     }
 
-    private IEnumerable GetUp(){
+    private IEnumerator GetUp(){
+        Debug.Log("Start Getup");
         yield return new WaitForSeconds(getUpTimer);
         isKnockedDown = false;
         getUpEvent.Invoke();
+        Debug.Log("End Got Up");
     }
 }

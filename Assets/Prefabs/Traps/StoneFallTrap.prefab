@@ -25,12 +25,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381049714}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2682211101054490875}
-  m_RootOrder: 2
+  m_Father: {fileID: 2682211102843581648}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1381049717
 BoxCollider2D:
@@ -111,7 +111,6 @@ Transform:
   m_Children:
   - {fileID: 2682211101489540837}
   - {fileID: 2682211102843581648}
-  - {fileID: 1381049715}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -166,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireOnce: 1
   hasBeenTriggered: 0
+  onlyPlayerTriggers: 1
   triggeredEvent:
     m_PersistentCalls:
       m_Calls:
@@ -189,6 +189,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Triggered
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2682211101054490874}
+        m_MethodName: set_simulated
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2682211101489540826
@@ -323,7 +334,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1381049715}
   m_Father: {fileID: 2682211101054490875}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -410,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireOnce: 1
   hasBeenTriggered: 0
+  onlyPlayerTriggers: 1
   triggeredEvent:
     m_PersistentCalls:
       m_Calls:
@@ -470,7 +483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68, y: 0.56}
+  m_Size: {x: 0.81, y: 0.78}
   m_EdgeRadius: 0
 --- !u!50 &2682211102843581651
 Rigidbody2D:
