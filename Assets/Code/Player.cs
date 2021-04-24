@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float yForce = 1f;
     public float jumpForce = 1f;
 
+    public float verticalMoveRatio = 2f / 3f; // how far to move up to correspond with moving horizontal. 
+
     public Vector2 joyInput = new Vector2();
 
     public Rigidbody2D rigid;
@@ -26,10 +28,10 @@ public class Player : MonoBehaviour
 
     public void UpdateInput(){
         joyInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        rigid.AddForce(new Vector2(joyInput.x * xForce, 0));
+        rigid.AddForce(new Vector2(joyInput.x * xForce, joyInput.y * yForce * verticalMoveRatio ));
 
         if( Input.GetButtonDown("Jump")){
-            rigid.AddForce(new Vector2( 0, yForce));
+            rigid.AddForce(new Vector2(joyInput.x * xForce, joyInput.y * yForce * verticalMoveRatio), ForceMode2D.Impulse);
         }
     }
 
