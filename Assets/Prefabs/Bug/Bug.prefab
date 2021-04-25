@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6876324728480574487}
   - component: {fileID: 6876324728480574484}
   - component: {fileID: 6876324728480574485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 6876324730180214611}
   - component: {fileID: 6876324730180214621}
   - component: {fileID: 6876324730180214610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}

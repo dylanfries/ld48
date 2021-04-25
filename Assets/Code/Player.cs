@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
     public float xForce = 1f;
     public float yForce = 1f;
     public bool isJumping = false;
-    public float jumpForce = 1f;
+    public float jumpForceBase = 1f;
+    public float jumpForceMomentum = 1f;
 
     [Header("Movement Settings")]
     private float verticalMoveRatio = 2f / 3f; // how far to move up to correspond with moving horizontal. 
@@ -48,9 +49,17 @@ public class Player : MonoBehaviour
         if (isJumping ) {
             Vector2 normalizedInput = joyInput.normalized;
 
-            Vector2 baseVector = new Vector2(normalizedInput.x * xForce, normalizedInput.y * yForce * verticalMoveRatio);
+            // gives more control over the different boosts. 
+            Vector2 baseVector = new Vector2(normalizedInput.x * jumpForceBase, normalizedInput.y * jumpForceBase * verticalMoveRatio);
+            Vector2 momentumVector = new Vector2(joyInput.x * jumpForceMomentum, joyInput.y * jumpForceMomentum * verticalMoveRatio);
+
+
+
+            /*
+            Vector2 baseVector = new Vector2(normalizedInput.x * xForceBase, normalizedInput.y * yForce * verticalMoveRatio);
             Vector2 directionVector = new Vector2 (joyInput.x * xForce, joyInput.y * yForce * verticalMoveRatio);
-            rigid.AddForce((baseVector + directionVector), ForceMode2D.Impulse);
+        */
+            rigid.AddForce((baseVector + momentumVector), ForceMode2D.Impulse);
         }
     }
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1381049715}
   - component: {fileID: 1381049717}
   - component: {fileID: 1381049716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PermanentRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 2682211101054490757}
   - component: {fileID: 2682211101054490874}
   - component: {fileID: 2682211101054490756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StoneFallTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 2682211101489540837}
   - component: {fileID: 2682211101489540839}
   - component: {fileID: 2682211101489540836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 2682211102843581661}
   - component: {fileID: 2682211102843581650}
   - component: {fileID: 2682211102843581651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

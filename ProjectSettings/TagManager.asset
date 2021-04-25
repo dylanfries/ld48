@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - JunkInLevel
+  - Player
+  - HitOnlyPlayer
   - 
   - 
   - 
