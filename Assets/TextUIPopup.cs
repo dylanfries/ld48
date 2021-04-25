@@ -10,6 +10,10 @@ public class TextUIPopup : MonoBehaviour
 
     public int timesOpened = 0;
 
+    public bool closeWithTimer = false;
+    public float closeTimer = 3f;
+
+
     public string[] textToPrint;
     private void OnTriggerEnter2D(Collider2D collision) {
 
@@ -22,9 +26,24 @@ public class TextUIPopup : MonoBehaviour
         }
 
         timesOpened++;
+
+        if(closeWithTimer){
+            StartCoroutine(CloseWithTimer(closeTimer));
+
+        }
+    }
+
+    private IEnumerator CloseWithTimer(float t){
+        yield return new WaitForSeconds(t);
+        Close();
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
+        Close();
+    }
+
+    private void Close(){
         UIPanel.SetActive(false);
+        StopAllCoroutines();
     }
 }

@@ -26,6 +26,10 @@ public class CameraBounder : MonoBehaviour
         maxCamBounds.x = x;
     }
 
+    public void SetYMaxBounds(float y) {
+        maxCamBounds.y = y;
+    }
+
     // Update is called once per frame
     void Update()
     {
