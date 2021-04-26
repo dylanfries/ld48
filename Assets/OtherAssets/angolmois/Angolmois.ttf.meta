@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d79cb1a78d81d0247be2d9381fa164fb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Angolmois
+  fontNames:
+  - Angolmois
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e2ce0a41d948b04468aabae341120f60, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

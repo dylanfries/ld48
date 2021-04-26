@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - JunkInLevel
+  - Player
+  - HitOnlyPlayer
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: TrapsAndTop
     uniqueID: 3955438843
+    locked: 0
+  - name: Camera Topper
+    uniqueID: 2485104793
     locked: 0
