@@ -489,7 +489,7 @@ TextureImporter:
       name: player-sheet_rolls_WRoll1
       rect:
         serializedVersion: 2
-        x: 896
+        x: 898
         y: 0
         width: 64
         height: 64
