@@ -1449,6 +1449,21 @@ MonoBehaviour:
           m_StringArgument: startGame
           m_BoolArgument: 0
         m_CallState: 2
+  onDelayedStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 621839614}
+        m_MethodName: set_simulated
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  delayTimer: 9
 --- !u!4 &621839617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5922275545601791013, guid: e65f00ccec0d26a40a707e54a19d969c,
@@ -2012,8 +2027,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1756993517}
-  - {fileID: 1011101563}
   - {fileID: 1232852157}
+  - {fileID: 1011101563}
   - {fileID: 202898761}
   - {fileID: 771745008}
   m_Father: {fileID: 0}
@@ -2232,7 +2247,7 @@ RectTransform:
   m_Children:
   - {fileID: 1785804148}
   m_Father: {fileID: 844651838}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2544,7 +2559,7 @@ RectTransform:
   - {fileID: 673931163}
   - {fileID: 1657757137}
   m_Father: {fileID: 844651838}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2987,6 +3002,21 @@ MonoBehaviour:
           m_StringArgument: FadeIn
           m_BoolArgument: 0
         m_CallState: 2
+  onDelayedStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delayTimer: 6
 --- !u!1 &1432461985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,6 +5974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922275545601791450, guid: e65f00ccec0d26a40a707e54a19d969c,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e65f00ccec0d26a40a707e54a19d969c, type: 3}

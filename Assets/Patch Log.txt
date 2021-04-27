@@ -1,0 +1,5 @@
+﻿.0012
+
+ld patch 12 - Pixel art imported as point instead of bilinear (for that extra jaggy pixel art look)
+Locked character movement at start
+Disabled transparent camera flag SpriteRenderer once fade is complete (performance only, won't effect gameplay)
