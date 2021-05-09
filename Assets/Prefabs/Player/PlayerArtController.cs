@@ -7,13 +7,6 @@ public class PlayerArtController : MonoBehaviour
     public Animator anim;
     public Rigidbody2D playerRigid;
 
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
